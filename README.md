@@ -1,9 +1,13 @@
 # GrokBot Mail.com Plugin
 
-> **Status: archived.** Mail.com gates POP3/IMAP (and forwarding-out) behind
-> Premium, and exposes no public API — so this connector can't reach a free
-> mailbox. Kept here for reference / revival if that ever changes. It works
-> as-is against any standard IMAP/SMTP host (e.g. Gmail) via env vars.
+> **⚠️ Requires mail.com Premium — will NOT work on a free mailbox.**
+> Mail.com locks POP3/IMAP *and* email forwarding behind Premium, and offers
+> no public API. This connector talks to the mailbox over IMAP/SMTP, so a free
+> account simply has nothing for it to connect to. There is no workaround
+> short of upgrading (or pointing the server at a different provider's
+> IMAP/SMTP via env vars — Gmail works).
+>
+> **Status: archived** for the above reason. Kept for reference.
 
 Mail.com connector for GrokBot, as an MCP server. Mail.com has no public REST API,
 so this wraps the official mailbox protocols:
