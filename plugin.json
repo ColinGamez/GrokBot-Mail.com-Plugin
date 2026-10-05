@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "mailcom",
+  "description": "Mail.com mailbox for GrokBot: read, search, send and reply via IMAP/SMTP. For project + support triage on a mail.com address.",
+  "version": "0.2.0",
+  "author": { "name": "ColinGamez" },
+  "license": "MIT",
+  "repository": "https://github.com/ColinGamez/GrokBot-Mail.com-Plugin",
+  "keywords": ["mail.com", "email", "imap", "smtp", "support", "grokbot", "mcp"],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "MAILCOM_EMAIL": {
+        "type": "string",
+        "title": "Mail.com address",
+        "description": "Full mail.com address used as IMAP/SMTP login"
+      },
+      "MAILCOM_PASSWORD": {
+        "type": "string",
+        "title": "Mail.com password",
+        "description": "Mailbox password. Never commit the real value."
+      }
+    },
+    "required": ["MAILCOM_EMAIL", "MAILCOM_PASSWORD"]
+  }
+}

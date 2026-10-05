@@ -1,0 +1,9 @@
+[project]
+name = "grokbot-mailcom-plugin"
+version = "0.2.0"
+description = "Mail.com MCP server for GrokBot (IMAP + SMTP)"
+requires-python = ">=3.10"
+dependencies = ["mcp[cli]>=1.9"]
+
+[tool.pytest.ini_options]
+testpaths = ["."]

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "mailcom": {
+      "command": "python",
+      "args": ["server.py"],
+      "env": {
+        "MAILCOM_EMAIL": "${MAILCOM_EMAIL}",
+        "MAILCOM_PASSWORD": "${MAILCOM_PASSWORD}",
+        "IMAP_HOST": "imap.mail.com",
+        "IMAP_PORT": "993",
+        "SMTP_HOST": "smtp.mail.com",
+        "SMTP_PORT": "587",
+        "SMTP_STARTTLS": "true"
+      }
+    }
+  }
+}
